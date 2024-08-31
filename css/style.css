@@ -49,7 +49,10 @@ nav a:hover {
     margin-bottom: 10px;
     font-size: 24px;
 }
-
+#home h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
 #home p {
     font-size: 18px;
     color: #666;
