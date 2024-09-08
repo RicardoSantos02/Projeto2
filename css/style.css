@@ -1,126 +1,122 @@
-/* Reseta estilos padrão do navegador */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do corpo da página */
+/* Estilos do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    padding: 20px;
+    background: #e0e0e0;
     line-height: 1.6;
+    text-align: center; /* Centraliza o texto do corpo */
 }
 
-/* Estilo do cabeçalho */
+/* Cabeçalho */
 header {
-    background-color: #000000;
-    color: white;
-    padding: 20px;
+    background: rgb(49, 19, 63); /* Cor verde definida */
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    border-radius: 20px;
+    font-size: 1.5rem;
 }
 
-/* Estilo da navegação */
 nav a {
-    margin: 0 10px;
-    color: white;
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo da seção home */
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 60vh;
-    margin: 0 auto;
-}
-
-#home h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-#home h3 {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-#home p {
-    font-size: 18px;
-    color: #666;
-}
-
-/* Estilo da seção de cadastro */
-#cadastro {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilo dos formulários */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
-form input {
-    margin-bottom: 15px;
+/* Área principal */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centraliza o main na página */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções de vídeos */
+section {
+    margin-bottom: 40px;
     padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contêiner de vídeo para manter a proporção 16:9 e ajuste de tamanho */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajuste o tamanho máximo do vídeo */
+    margin: 20px auto; /* Centraliza o vídeo */
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Formulário de cadastro */
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgb(49, 19, 63); /* Cor verde definida */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
-    padding: 10px;
-    border: none;
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Estilo das seções de mídia */
-#videos, #musicas {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os vídeos */
-    gap: 40px; /* Espaçamento entre os vídeos */
-}
-
-.media-item {
+button {
     width: 100%;
-    max-width: 560px; /* Limita a largura máxima para corresponder ao tamanho do iframe */
-    text-align: center; /* Centraliza o título dos vídeos */
-    margin-bottom: 30px;
+    padding: 10px;
+    background: rgb(49, 19, 63); /* Cor verde definida */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
-/* Estilo do rodapé */
+button:hover {
+    background: #3d0b37; /* Cor mais clara ao passar o mouse */
+}
+
+/* Rodapé */
 footer {
+    background: #333;
+    color: #fff;
     text-align: center;
-    margin-top: 30px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-/* Estilo responsivo */
-@media (max-width: 768px) {
-    iframe, audio {
-        width: 100%;
-    }
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9rem;
 }
