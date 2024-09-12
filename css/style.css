@@ -41,6 +41,66 @@ main {
 }
 
 /* Seções de vídeos */
+/* Estilos para a seção de vídeos */
+#videos {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#videos h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo das listas de links */
+#videos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#videos ul li {
+    margin: 10px 0;
+}
+
+#videos ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#videos ul li a:hover {
+    color: #0056b3;
+}
+
+/* Estilos dos vídeos */
+.media-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.media-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #444;
+}
+
+/* Tornando os iframes responsivos */
+.media-item iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 section {
     margin-bottom: 40px;
     padding: 10px;
