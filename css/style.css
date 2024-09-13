@@ -129,6 +129,37 @@ section {
     border: none;
 }
 
+/* Contêiner dos cartões */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; /* Centraliza os cartões horizontalmente */
+    padding: 2rem 0;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    display: inline;
+    padding: 1rem;
+  }
+  
+  .card-content h3 {
+    margin-top: 0;
+  }
 /* Formulário de cadastro */
 form {
     max-width: 400px;
