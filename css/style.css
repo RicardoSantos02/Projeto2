@@ -11,28 +11,35 @@ body {
     color: #333;
     background: #e0e0e0;
     line-height: 1.6;
-    text-align: center; /* Centraliza o texto do corpo */
+    text-align: center;
+    /* Centraliza o texto do corpo */
 }
 
 /* Cabeçalho */
 header {
-    background: rgb(49, 19, 63); /* Cor verde definida */
+    background: rgb(49, 19, 63);
+    /* Cor verde definida */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     font-size: 1.5rem;
-    position: relative; /* Necessário para posicionar a logo absolutamentemente */
+    position: relative;
+    /* Necessário para posicionar a logo absolutamentemente */
 }
 
 header .logo {
     position: absolute;
-    bottom: 10px; /* Ajuste conforme necessário */
-    left: 10px; /* Ajuste conforme necessário */
-    max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    bottom: 10px;
+    /* Ajuste conforme necessário */
+    left: 10px;
+    /* Ajuste conforme necessário */
+    max-width: 150px;
+    /* Ajuste o tamanho da logo conforme necessário */
 }
 
 nav {
-    margin-top: 1rem; /* Espaço entre o título e o menu */
+    margin-top: 1rem;
+    /* Espaço entre o título e o menu */
 }
 
 nav a {
@@ -46,7 +53,8 @@ nav a {
 main {
     padding: 20px;
     max-width: 1000px;
-    margin: 0 auto; /* Centraliza o main na página */
+    margin: 0 auto;
+    /* Centraliza o main na página */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,7 +74,8 @@ main {
     margin-bottom: 20px;
     color: #333;
     font-size: 24px;
-    text-align: center; /* Centraliza o título */
+    text-align: center;
+    /* Centraliza o título */
 }
 
 /* Estilo dos links no card */
@@ -143,7 +152,8 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: rgb(49, 19, 63); /* Cor verde definida */
+    color: rgb(49, 19, 63);
+    /* Cor verde definida */
 }
 
 input {
@@ -157,7 +167,8 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background: rgb(49, 19, 63); /* Cor verde definida */
+    background: rgb(49, 19, 63);
+    /* Cor verde definida */
     border: none;
     color: #fff;
     cursor: pointer;
@@ -166,7 +177,8 @@ button {
 }
 
 button:hover {
-    background: #3d0b37; /* Cor mais clara ao passar o mouse */
+    background: #3d0b37;
+    /* Cor mais clara ao passar o mouse */
 }
 
 /* Rodapé */
