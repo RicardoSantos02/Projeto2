@@ -17,7 +17,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: rgb(49, 19, 63);
+    background: rgb(35, 8, 48);
     /* Cor verde definida */
     color: #fff;
     padding: 1rem 0;
@@ -198,7 +198,7 @@ button:hover {
 
 /* Rodapé */
 footer {
-    background: #333;
+    background: rgb(35, 8, 48);
     color: #fff;
     text-align: center;
     padding: 10px;
