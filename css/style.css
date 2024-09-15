@@ -21,6 +21,18 @@ header {
     padding: 1rem 0;
     text-align: center;
     font-size: 1.5rem;
+    position: relative; /* Necessário para posicionar a logo absolutamentemente */
+}
+
+header .logo {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
+    max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+nav {
+    margin-top: 1rem; /* Espaço entre o título e o menu */
 }
 
 nav a {
@@ -40,9 +52,8 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Seções de vídeos */
-/* Estilos para a seção de vídeos */
-#videos {
+/* Seção de vídeos */
+#video-index {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -51,37 +62,54 @@ main {
     margin: 20px auto;
 }
 
-#videos h2 {
-    text-align: center;
-    color: #333;
+#video-index h2 {
     margin-bottom: 20px;
+    color: #333;
     font-size: 24px;
+    text-align: center; /* Centraliza o título */
 }
 
-/* Estilo das listas de links */
-#videos ul {
+/* Estilo dos links no card */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card ul {
     list-style: none;
     padding: 0;
 }
 
-#videos ul li {
+.card ul li {
     margin: 10px 0;
 }
 
-#videos ul li a {
+.card ul li a {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-#videos ul li a:hover {
+.card ul li a:hover {
     color: #0056b3;
 }
 
 /* Estilos dos vídeos */
 .media-item {
     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -99,67 +127,8 @@ main {
     aspect-ratio: 16 / 9;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-section {
-    margin-bottom: 40px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
-/* Contêiner de vídeo para manter a proporção 16:9 e ajuste de tamanho */
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px; /* Ajuste o tamanho máximo do vídeo */
-    margin: 20px auto; /* Centraliza o vídeo */
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Contêiner dos cartões */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center; /* Centraliza os cartões horizontalmente */
-    padding: 2rem 0;
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card-content {
-    display: inline;
-    padding: 1rem;
-  }
-  
-  .card-content h3 {
-    margin-top: 0;
-  }
 /* Formulário de cadastro */
 form {
     max-width: 400px;
