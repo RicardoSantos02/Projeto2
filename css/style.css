@@ -35,9 +35,9 @@ header .logo {
     position: absolute;
     bottom: auto;
     /* Ajuste conforme necessário */
-    left: 10px;
+    left: 20px;
     /* Ajuste conforme necessário */
-    max-width: 80px;
+    max-width: 70px;
     /* Ajuste o tamanho da logo conforme necessário */
 }
 
