@@ -30,16 +30,54 @@ h3 {
     /* Centraliza todos os títulos */
 }
 
-/* Responsividade adicional */
+media (max-width: 720px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
 
-/* Motorola e22 e Xiaomi 12C */
-@media (max-width: 720px) {
-    /* Ajustes para telas de 720px de largura */
+    .card {
+        width: 160px;
+    }
+
+    #video-index,
+    form {
+        max-width: 90%;
+    }
+
+    .media-item iframe {
+        height: 400px;
+    }
 }
 
-/* Samsung Galaxy (FHD) */
 @media (max-width: 1080px) {
-    /* Ajustes para telas de 1080px de largura */
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        width: 180px;
+    }
+
+    #video-index,
+    form {
+        max-width: 95%;
+    }
+
+    .media-item iframe {
+        height: 420px;
+    }
 }
 
 @media (max-width: 1200px) {
