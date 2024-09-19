@@ -6,7 +6,8 @@
 }
 
 /* Estilos do corpo e estrutura da página */
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -21,18 +22,23 @@ body {
 }
 
 /* Centralizando os títulos */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-size: 1.5rem;
-    text-align: center; /* Centraliza todos os títulos */
+    text-align: center;
+    /* Centraliza todos os títulos */
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 1.3rem;
     }
+
     h2 {
         font-size: 1.1rem;
     }
+
     h3 {
         font-size: 1rem;
     }
@@ -42,9 +48,11 @@ h1, h2, h3 {
     h1 {
         font-size: 1.1rem;
     }
+
     h2 {
         font-size: 1rem;
     }
+
     h3 {
         font-size: 0.9rem;
     }
@@ -82,7 +90,56 @@ nav a {
 }
 
 /* Seção de vídeos */
-#video-index {
+#videos { 
+    filter: drop-shadow(0 0 0.3rem rgb(59, 37, 70));
+    box-shadow: 0.2px 0.2px 0.2rem rgb(47, 4, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    /* Mesma cor do formulário */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 100px auto 40px auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo dos cartões de vídeo */
+.media-item {
+    filter: drop-shadow(0 0 0.4rem rgb(59, 37, 70));
+    box-shadow: 0.3px 0.3px 0.3rem rgb(47, 4, 66);
+    background-color: #fff;
+    /* Cor do fundo do card */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    /* Controla a largura dos vídeos */
+}
+
+.media-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Responsividade dos vídeos */
+.media-item iframe {
+    border-radius: 5px;
+    width: 100%;
+    height: 450px;
+}
+
+#video-index {    
+    filter: drop-shadow(0 0 0.4rem rgb(59, 37, 70));
+    box-shadow: 0.3px 0.3px 0.4rem rgb(47, 4, 66);
     text-align: center;
     padding: 20px;
     background-color: #fff;
@@ -103,14 +160,15 @@ nav a {
 /* Estilo dos cards de vídeo */
 .card-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
     flex-wrap: wrap;
 }
 
 .card {
     width: 200px;
     margin: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,8 +215,8 @@ nav a {
 
 /* Formulário */
 form {
-    filter: drop-shadow(0 0 1rem rgb(59, 37, 70));
-    box-shadow: 2px 2px 2rem rgb(47, 4, 66);
+    filter: drop-shadow(0 0 0.3rem rgb(59, 37, 70));
+    box-shadow: 0.2px 0.2px 0.2rem rgb(47, 4, 66);
     max-width: 400px;
     margin: 30px auto;
     background: #f7f7f7;
@@ -183,7 +241,8 @@ form label {
     color: rgb(49, 19, 63);
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -192,8 +251,8 @@ form input, form textarea {
 }
 
 form button {
-    filter: drop-shadow(0 0 0.5rem rgb(59, 37, 70));
-    box-shadow: 0.5px 0.5px 0.5rem rgb(47, 4, 66);
+    filter: drop-shadow(0 0 0.4rem rgb(59, 37, 70));
+    box-shadow: 0.3px 0.3px 0.3rem rgb(47, 4, 66);
     width: 100%;
     padding: 10px;
     background: rgb(49, 19, 63);
@@ -225,13 +284,17 @@ footer {
 
 /* Ajustes de responsividade */
 @media (max-width: 768px) {
-    #video-index, form {
+
+    #video-index,
+    form {
         max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    #video-index, form {
+
+    #video-index,
+    form {
         max-width: 95%;
     }
 }
