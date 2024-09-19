@@ -30,6 +30,143 @@ h3 {
     /* Centraliza todos os títulos */
 }
 
+/* Responsividade adicional */
+
+/* Motorola e22 e Xiaomi 12C */
+@media (max-width: 720px) {
+    /* Ajustes para telas de 720px de largura */
+}
+
+/* Samsung Galaxy (FHD) */
+@media (max-width: 1080px) {
+    /* Ajustes para telas de 1080px de largura */
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        width: 180px;
+    }
+
+    #video-index,
+    form {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        width: 170px;
+    }
+
+    #video-index,
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    #video-index,
+    form {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        width: 130px;
+    }
+
+    #video-index,
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #video-index,
+    form {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 0.9rem;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #video-index,
+    form {
+        max-width: 98%;
+    }
+}
 @media (max-width: 768px) {
     h1 {
         font-size: 1.3rem;
