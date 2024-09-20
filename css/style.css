@@ -30,13 +30,15 @@ h3 {
     /* Centraliza todos os títulos */
 }
 
-media (max-width: 720px) {
+@media (max-width: 720px) {
     h1 {
         font-size: 1.4rem;
     }
+
     h2 {
         font-size: 1.2rem;
     }
+
     h3 {
         font-size: 1rem;
     }
@@ -59,9 +61,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1.5rem;
     }
+
     h2 {
         font-size: 1.3rem;
     }
+
     h3 {
         font-size: 1.1rem;
     }
@@ -84,9 +88,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1.6rem;
     }
+
     h2 {
         font-size: 1.4rem;
     }
+
     h3 {
         font-size: 1.2rem;
     }
@@ -105,9 +111,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1.5rem;
     }
+
     h2 {
         font-size: 1.3rem;
     }
+
     h3 {
         font-size: 1.1rem;
     }
@@ -126,9 +134,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1.3rem;
     }
+
     h2 {
         font-size: 1.1rem;
     }
+
     h3 {
         font-size: 1rem;
     }
@@ -147,9 +157,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1.2rem;
     }
+
     h2 {
         font-size: 1rem;
     }
+
     h3 {
         font-size: 0.95rem;
     }
@@ -168,9 +180,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1.1rem;
     }
+
     h2 {
         font-size: 1rem;
     }
+
     h3 {
         font-size: 0.9rem;
     }
@@ -189,9 +203,11 @@ media (max-width: 720px) {
     h1 {
         font-size: 1rem;
     }
+
     h2 {
         font-size: 0.9rem;
     }
+
     h3 {
         font-size: 0.8rem;
     }
@@ -205,6 +221,7 @@ media (max-width: 720px) {
         max-width: 98%;
     }
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1.3rem;
@@ -265,7 +282,7 @@ nav a {
 }
 
 /* Seção de vídeos */
-#videos { 
+#videos {
     filter: drop-shadow(0 0 0.3rem rgb(59, 37, 70));
     box-shadow: 0.2px 0.2px 0.2rem rgb(47, 4, 66);
     display: flex;
@@ -312,7 +329,7 @@ nav a {
     height: 450px;
 }
 
-#video-index {    
+#video-index {
     filter: drop-shadow(0 0 0.4rem rgb(59, 37, 70));
     box-shadow: 0.3px 0.3px 0.4rem rgb(47, 4, 66);
     text-align: center;
